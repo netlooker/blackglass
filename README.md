@@ -210,6 +210,10 @@ just integration          # full end-to-end: HTTP smoke + MCP smoke
 
 CI runs `compile` + `pytest --cov` on every push and pull request to `main` (see [`.github/workflows/ci.yml`](.github/workflows/ci.yml)).
 
+## Agent playbook
+
+A harness-agnostic agent playbook for one-URL retrieval ships at [`skills/blackglass-retrieve/`](skills/blackglass-retrieve/). The [`PLAYBOOK.md`](skills/blackglass-retrieve/PLAYBOOK.md) is the single source of truth — pure markdown instructions any agent can read. The [`GUIDE.md`](skills/blackglass-retrieve/GUIDE.md) shows how to wire it into Claude Code, OpenCode, Codex, Antigravity, Cursor / Continue / Windsurf, raw system prompts, or — preferred when available — the bundled `blackglass-mcp` MCP server.
+
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) for the running list of changes.

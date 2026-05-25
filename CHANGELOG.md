@@ -30,6 +30,7 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) an
 - GitHub Actions CI workflow (`.github/workflows/ci.yml`) running `compileall` + `pytest --cov` on push and PR to `main`.
 - `LICENSE` (MIT) and `license = { file = "LICENSE" }` in `pyproject.toml`.
 - `README.md` reference tables for every config section, an example `/retrieve` response, the auto-mode heuristic list, and a documented `just` workflow split (local vs. container).
+- Harness-agnostic agent playbook at `skills/blackglass-retrieve/PLAYBOOK.md`, with a `GUIDE.md` covering wiring into Claude Code, OpenCode, Codex, Antigravity, Cursor/Continue/Windsurf, raw system prompts, and the bundled MCP server.
 
 ### Known gaps (intentionally deferred)
 
