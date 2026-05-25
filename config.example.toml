@@ -1,0 +1,20 @@
+[server]
+host = "127.0.0.1"
+port = 8010
+
+[policy]
+respect_robots_default = true
+browser_enabled = false
+cloakbrowser_enabled = false
+deny_local_networks = true
+
+[retrieval]
+default_mode = "auto"
+default_backends = ["scrapling_http"]
+timeout_seconds = 20
+max_body_bytes = 3000000
+artifact_dir = "~/.blackglass/artifacts"
+
+[domains."example.com"]
+allow = true
+allowed_backends = ["scrapling_http", "cloakbrowser"]

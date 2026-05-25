@@ -1,0 +1,16 @@
+[server]
+host = "0.0.0.0"
+port = 8010
+
+[policy]
+respect_robots_default = true
+browser_enabled = true
+cloakbrowser_enabled = true
+deny_local_networks = true
+
+[retrieval]
+default_mode = "auto"
+default_backends = ["scrapling_http", "cloakbrowser"]
+timeout_seconds = 20
+max_body_bytes = 3000000
+artifact_dir = "/data/artifacts"
